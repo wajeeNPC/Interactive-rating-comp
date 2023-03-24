@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive-rating-comp</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <img src="images/icon-star.svg" alt="orange-star" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request.All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <button class="btn1" onclick="rate(this,1)">1</button>
+        <button class="btn2" onclick="rate(this,2)">2</button>
+        <button class="btn3" onclick="rate(this,3)">3</button>
+        <button class="btn4" onclick="rate(this,4)">4</button>
+        <button class="btn5" onclick="rate(this,5)">5</button>
+      </div>
+      <div class="bottom">
+        <button class="sub" onclick="submit()">S U B M I T</button>
+      </div>
+    </div>
+    <div class="main hide">
+        <img src="images\illustration-thank-you.svg">
+        <p class="sel">You selected <span id="num-EL">0</span> of 5</p>
+        <h1>Thank you!</h1>
+        <p class="far">We appreciate you taking the time to give a rating. If you ever need more support, dont hesitate to get in touch!</p>
+        </div>
+    <script src="index.js"></script>
+  </body>
+</html>
